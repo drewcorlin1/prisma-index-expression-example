@@ -7,4 +7,4 @@ CREATE TABLE "users" (
 );
 
 -- CreateIndex
-CREATE INDEX "users_first_name_idx" ON "users"("first_name");
+CREATE INDEX "users_first_name_idx" ON "users"(LOWER("first_name"));
